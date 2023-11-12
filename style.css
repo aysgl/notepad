@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvatica", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  background-image: url(mac.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.container {
+  width: 800px;
+  background-color: #1e1d1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 0.5rem;
+}
+.container button {
+  border: none;
+  padding: 0 1rem;
+  cursor: pointer;
+  background: transparent;
+}
+.container .notes {
+  width: 100%;
+}
+.container .notes .header {
+  background-color: #362a26;
+  height: 50px;
+  width: 100%;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+}
+.container .notes .header .action {
+  display: flex;
+}
+.container .notes .header .action .ball {
+  width: 12px;
+  height: 12px;
+  border-radius: 12px;
+  margin-right: 0.45rem;
+}
+.container .notes .header .action .ball.red {
+  background-color: rgb(253, 70, 70);
+}
+.container .notes .header .action .ball.yellow {
+  background-color: rgb(254, 176, 36);
+}
+.container .notes .header .action .ball.green {
+  background-color: rgb(42, 193, 49);
+}
+.container .notes .content {
+  width: 100%;
+  min-height: 300px;
+  display: flex;
+}
+.container .notes .content .left {
+  width: 25%;
+  background-color: #2d211d;
+  height: 50vh;
+  border-bottom-left-radius: 0.5rem;
+  border-right: 1px solid black;
+}
+.container .notes .content .left .item {
+  padding: 0.25rem 1.5rem;
+  margin: 0.65rem;
+  border-radius: 0.25rem;
+  border-bottom: 1px solid rgba(210, 207, 213, 0.062745098);
+  cursor: pointer;
+}
+.container .notes .content .left .item-title {
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  height: 45px;
+  overflow: hidden;
+}
+.container .notes .content .left .item-body {
+  opacity: 0.6;
+}
+.container .notes .content .left .item.active {
+  background: rgba(252, 184, 38, 0.5);
+}
+.container .notes .content .left .item.selected {
+  background: #464646;
+}
+.container .notes .content .main {
+  width: 75%;
+  height: 100%;
+}
+.container .notes .content .main textarea {
+  width: 100%;
+  height: 50vh;
+  border-radius: 0.5rem;
+  background-color: #1e1d1f;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  color: white;
+}
+.container .notes .add,
+.container .notes .delete {
+  font-size: 1rem;
+  color: rgb(143, 136, 145);
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  transition: all 0.4s;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvatica", sans-serif;
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 3rem;
+  background-image: url(mac.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.container {
+  width: 800px;
+  background-color: #1e1d1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 0.5rem;
+  button {
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    background: transparent;
+  }
+  .notes {
+    width: 100%;
+
+    .header {
+      background-color: #362a26;
+      height: 50px;
+      width: 100%;
+      border-top-right-radius: 0.5rem;
+      border-top-left-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0rem 1rem;
+      .action {
+        display: flex;
+        .ball {
+          width: 12px;
+          height: 12px;
+          border-radius: 12px;
+          margin-right: 0.45rem;
+          &.red {
+            background-color: rgba(253, 70, 70);
+          }
+          &.yellow {
+            background-color: rgba(254, 176, 36);
+          }
+          &.green {
+            background-color: rgba(42, 193, 49);
+          }
+        }
+      }
+    }
+    .content {
+      width: 100%;
+      min-height: 300px;
+      display: flex;
+      .left {
+        width: 25%;
+        background-color: #2d211d;
+        height: 50vh;
+        border-bottom-left-radius: 0.5rem;
+        border-right: 1px solid black;
+
+        .item {
+          padding: 0.25rem 1.5rem;
+          margin: 0.65rem;
+          border-radius: 0.25rem;
+          border-bottom: 1px solid #d2cfd510;
+          cursor: pointer;
+          &-title {
+            font-weight: bold;
+            margin-bottom: 0.25rem;
+            height: 45px;
+            overflow: hidden;
+          }
+          &-body {
+            opacity: 0.6;
+          }
+          &.active {
+            background: rgba(252, 184, 38, 0.5);
+          }
+          &.selected {
+            background: #464646;
+          }
+        }
+      }
+      .main {
+        width: 75%;
+        height: 100%;
+        textarea {
+          width: 100%;
+          height: 50vh;
+          border-radius: 0.5rem;
+          background-color: #1e1d1f;
+          outline: none;
+          border: none;
+          padding: 1rem;
+          color: white;
+        }
+      }
+    }
+    .add,
+    .delete {
+      font-size: 1rem;
+      color: rgba(143, 136, 145);
+    }
+  }
+}
