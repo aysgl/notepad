@@ -2,4 +2,4 @@
 
 This is an example of a notepad
 
-![](nodepad.gif)
+![](notepad.gif)
